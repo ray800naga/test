@@ -10,6 +10,7 @@ def idf(term, docs):
     :rtype: float
     """
     num = 0
+    #docsの中にtermがいくつあるのかをカウントする．
     for doc in docs:
         if(term in doc):
             num += 1
