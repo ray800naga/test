@@ -34,7 +34,7 @@ def tf_idf(terms, docs):
     :param docs: list of documents
     :type docs: list
     :returns: tf-idf values matrix
-    :rtype: 
+    :rtype: numpy.ndarray
     """
     mtx = np.zeros((len(docs), len(terms)))
     for i, doc in enumerate(docs):
