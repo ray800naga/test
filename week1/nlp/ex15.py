@@ -42,6 +42,7 @@ def tf_idf(terms, docs):
             mtx[i][j] = tf(term, doc) * idf(term, docs)
     return (mtx)
 
-docs = [["リンゴ", "リンゴ"], ["リンゴ", "レモン"], ["レモン", "ミカン"]]
-terms = ["リンゴ", "レモン", "ミカン"]
-print(tf_idf(terms, docs))
+if __name__ == '__main__':
+    docs = [["リンゴ", "リンゴ"], ["リンゴ", "レモン"], ["レモン", "ミカン"]]
+    terms = ["リンゴ", "レモン", "ミカン"]
+    print(tf_idf(terms, docs))
